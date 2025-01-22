@@ -1,0 +1,131 @@
+:root {
+  --primario: #8C0375;
+  --secundario: #C004D9;
+  --terciario: #9303A6;
+  --cuaternario: #5D04D9;
+  --quinto: #03318C;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  background-color: var(--primario);
+  color: white;
+  padding: 1rem 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.productos, .registrar {
+  background-color: white;
+  padding: 1rem;
+  border: 2px solid var(--cuaternario);
+  border-radius: 8px;
+  flex: 1 1 calc(50% - 1rem);
+  box-sizing: border-box;
+  max-width: calc(50% - 1rem);
+}
+
+h2 {
+  color: var(--primario);
+}
+
+.productos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.producto {
+  border: 1px solid var(--terciario);
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.imagen {
+  background-color: var(--quinto);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+}
+
+.icono-borrar {
+  color: red;
+  cursor: pointer;
+}
+
+form label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--secundario);
+  border-radius: 8px;
+}
+
+form .botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: var(--cuaternario);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secundario);
+}
+
+footer {
+  font-size: 0.8rem;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 1024px) {
+  .registrar, .productos {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+      flex-direction: column;
+  }
+
+  .productos-lista {
+      grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>❤️ ❤️ ❤️ AluraGeek</h1>
+    </header>
+    <main>
+        <section class="productos">
+            <h2>MIS PRODUCTOS:</h2>
+            <div class="productos-lista">
+                <div class="producto">
+
+                    <div class="imagen"><img src="/img/839c11fc3105027e126215f3647fa5b0.jfif" alt="funkos1"></div>
+                    <p>Nombre del producto</p>
+                    <p>S/. 60,00 <span class="icono-borrar">🗑️</span></p>
+                </div>
+                <div class="producto">
+
+                    <div class="imagen"><img src="/img/5123b06dc2b03005a463881f216b87f1.png" alt="funkos2"></div>
+                    <p>Nombre del producto</p>
+                    <p>S/. 60,00 <span class="icono-borrar">🗑️</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="registrar">
+            <h2>Agregar Producto</h2>
+            <form>
+                <label for="nombre">Nombre del producto:</label>
+                <input type="text" id="nombre" placeholder="Ej. Camiseta" required>
+
+                <label for="precio">Precio del producto (S/.):</label>
+                <input type="number" id="precio" placeholder="Ej. 60.00" required>
+
+                <label for="imagen">Subir imagen:</label>
+                <input type="file" id="imagen" accept="image/*" required>
+
+                <div class="botones">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        ❤️ ❤️ ❤️ AluraGeek<br>
+        Desarrollado por Frank Jhonatan Rua Castro<br>
+        ALURA LATAM - 2024
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
